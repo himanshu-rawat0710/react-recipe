@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
 import RecipeList from '../components/RecipeList';
 import Search from '../components/Search';
-import {recipeData} from '../data/tempList'
+import {recipeData} from '../data/tempList';
+// import {recipeDataTwo} from '../data/tempListTwo';
 export default class Recipes extends Component {
     constructor(props) {
-        super(props)
+        super(props);
     }
     state={
         recipes:recipeData,
         search:''
 
-    }
+    };
 
     handleChange= (event) => {
         this.setState({
-            search:event.target.value
+            search: event.target.value
         });
     };
 
@@ -24,9 +25,13 @@ export default class Recipes extends Component {
     render() {
         return (
             <>
-                <h4>hello from recipeess.js</h4>
-                <Search search={this.state.search} handleChange={this.handleChange} handleSubmit={this.handleSubmit} />
-                <RecipeList />
+                
+                <Search search={this.state.search} 
+                handleChange={this.handleChange} 
+                handleSubmit={this.handleSubmit} />
+                
+
+                <RecipeList recipes={this.state.recipes} />
             </>
         )
     }
