@@ -8,6 +8,13 @@ body{
 
 .text-slanted{
   font-family: 'Henny Penny', cursive;
+  letter-spacing: 3px;
+  font-size: 1rem;
+}
+
+.text-slanted-two{
+  font-family: 'Monoton', cursive !important;
+  
 }
 
 .text-orange{
@@ -26,4 +33,8 @@ body{
 .default-hero {
   background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)),url('./images/defaultBcg.jpeg') center/cover no-repeat;
 
+}
+
+ol.list-style-number {
+  list-style-type: upper-roman !important;
 }

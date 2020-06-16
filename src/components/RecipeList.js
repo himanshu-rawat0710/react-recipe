@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Recipe from './Recipe';
+import Footer from '../components/Footer'
 
 export default class RecipeList extends Component {
     render() {
@@ -12,21 +13,24 @@ export default class RecipeList extends Component {
                     {/* title */}
                     <div className="row">
                         <div className="col-10 mx-auto col-md-6 text-center text-uppercase mb-3">
-                            <h1 className='text-slanted'>
+                            <h1 className='text-slanted' style={{fontSize:'2.5rem'}}>
                                 recipe list
                             </h1>
 
                         </div>
                     </div>
                     {/* end of title  */}
-                    {/* <div className='row'>
+                    <div className='row'>
                         {recipes.map(recipe => (
                             <Recipe key={recipe.recipe_id} recipe={recipe} />
-                        ))} */}
-                    {/* </div> */}
-                <Recipe />
+                        ))}
+                    </div>
+                {/* <Recipe /> */}
+
+            
                 
             </div>
+            <Footer />
             </>
         )
     }

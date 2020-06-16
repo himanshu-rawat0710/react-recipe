@@ -10,11 +10,11 @@ export default class Search extends Component {
             <div className="container">
                 <div className="row">
                     <div className="col-10 mx-auto col-md-8 mt-5 text-center">
-                        <h1 className='text-slanted text-capitalize'>
+                        <h4 className='text-slanted text-capitalize ' style={{fontSize:'3.5rem'}}>
                             Search recipes with <strong className='text-orange'>Tasty Recipe</strong>
-                        </h1>
+                        </h4>
                         <form  className="mt-4">
-                            <label htmlFor="search" className='text-capitalize'>Types recipes separated by commas
+                            <label htmlFor="search" className='text-capitalize'>Type recipes separated by commas
                             </label>
                             <div className="input-group">
                                 <input type='text' name='search' className="form-control" placeholder='onion,tomato,carrot'

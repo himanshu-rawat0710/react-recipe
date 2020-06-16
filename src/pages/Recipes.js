@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import RecipeList from '../components/RecipeList';
 import Search from '../components/Search';
-import {recipeData} from '../data/tempList';
+import {recipeDataTwo} from '../data/tempListTwo';
 // import {recipeDataTwo} from '../data/tempListTwo';
 export default class Recipes extends Component {
     constructor(props) {
         super(props);
     }
     state={
-        recipes:recipeData,
+        recipes:recipeDataTwo,
         search:''
 
     };

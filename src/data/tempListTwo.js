@@ -23,7 +23,31 @@ export const recipeDataTwo = [
         image_url:"https://spoonacular.com/recipeImages/Meatless-Monday--Grilled-Portobello-Mushroom-Burgers-with-Romesco-and-Arugula-602708.jpg"
         // imageUrls:"Meatless-Monday--Grilled-Portobello-Mushroom-Burgers-with-Romesco-and-Arugula-602708.jpg"
         
-        }
+        },
+        {
+                recipe_id:"602708",
+                title:"Meatless Monday: Grilled Portobello Mushroom Burgers with Romesco and Arugula",
+                publisher:"15 publisher",
+                image_url:"https://spoonacular.com/recipeImages/Meatless-Monday--Grilled-Portobello-Mushroom-Burgers-with-Romesco-and-Arugula-602708.jpg"
+                // imageUrls:"Meatless-Monday--Grilled-Portobello-Mushroom-Burgers-with-Romesco-and-Arugula-602708.jpg"
+                
+        },
+        {
+        recipe_id:"602708",
+        title:"Meatless Monday: Grilled Portobello Mushroom Burgers with Romesco and Arugula",
+        publisher:"15 publisher",
+        image_url:"https://spoonacular.com/recipeImages/Meatless-Monday--Grilled-Portobello-Mushroom-Burgers-with-Romesco-and-Arugula-602708.jpg"
+        // imageUrls:"Meatless-Monday--Grilled-Portobello-Mushroom-Burgers-with-Romesco-and-Arugula-602708.jpg"
+        
+        },
+        {
+                recipe_id:"602708",
+                title:"Meatless Monday: Grilled Portobello Mushroom Burgers with Romesco and Arugula",
+                publisher:"15 publisher",
+                image_url:"https://spoonacular.com/recipeImages/Meatless-Monday--Grilled-Portobello-Mushroom-Burgers-with-Romesco-and-Arugula-602708.jpg"
+                // imageUrls:"Meatless-Monday--Grilled-Portobello-Mushroom-Burgers-with-Romesco-and-Arugula-602708.jpg"
+                
+                }
 
 
 

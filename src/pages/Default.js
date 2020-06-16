@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../components/Header';
 import {Link} from 'react-router-dom';
+// import Footer from './components/Footer'
 
 export default class Default extends Component {
     render() {
@@ -13,6 +14,7 @@ export default class Default extends Component {
                 Return Home
             </Link>
             </Header>
+            
         )
     }
 }
