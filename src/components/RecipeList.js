@@ -6,6 +6,8 @@ import Footer from '../components/Footer'
 export default class RecipeList extends Component {
     render() {
         const { recipes } = this.props;
+        // const { id } = this.props;
+        console.log(recipes)
         // console.log(this.props)
         return (
             <>
@@ -22,7 +24,7 @@ export default class RecipeList extends Component {
                     {/* end of title  */}
                     <div className='row'>
                         {recipes.map(recipe => (
-                            <Recipe key={recipe.recipe_id} recipe={recipe} />
+                            <Recipe key={recipe.id} recipe={recipe} />
                         ))}
                     </div>
                 {/* <Recipe /> */}

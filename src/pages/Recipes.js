@@ -31,7 +31,7 @@ export default class Recipes extends Component {
                 handleSubmit={this.handleSubmit} />
                 
 
-                <RecipeList recipes={this.state.recipes} />
+                <RecipeList recipes={this.state.recipes.results} />
             </>
         )
     }
