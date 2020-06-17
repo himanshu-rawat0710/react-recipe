@@ -7,7 +7,7 @@ export default class RecipeList extends Component {
     render() {
         const { recipes } = this.props;
         // const { id } = this.props;
-        console.log(recipes)
+        // console.log(recipes)
         // console.log(this.props)
         return (
             <>

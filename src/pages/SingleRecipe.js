@@ -1,37 +1,68 @@
+// ComponentWillMount
+// Render
+// ComponentDidMount
+
 import React, { Component } from 'react';
-import {recipeDataTwo} from '../data/tempDetailsTwo';
+// import {recipeDataTwo} from '../data/tempDetailsTwo';
 import {Link} from 'react-router-dom';
 import Footer from '../components/Footer'
+// import {REACT_APP_API_kEY} from '.env.development'
+require('dotenv').config();
+// console.log(process.env)
 
 export default class SingleRecipe extends Component {
     constructor(props) {
         super(props);
-        const summaryCrop = recipeDataTwo.summary.replace(/^(.{100}[^\s]*).*/, "$1")
+        
         const id =this.props.match.params.id
         this.state = {
-            recipe:recipeDataTwo,
+            // recipe:recipeDataTwo,
+            recipe:{},
             id,
-            summaryCrop,
-            summaryCropLength:summaryCrop.length,
-            loading:false
+            
+            
+            
+            loading: true
         }
     }
 
+    // async 
+    async componentDidMount(){
+        // console.log('Did Mount Called');
+        const url = `https://api.spoonacular.com/recipes/${this.state.id}/information?apiKey=${process.env.REACT_APP_API_KEY}&includeNutrition=true`;
+
+        try{
+            const response = await fetch(url);
+            const responseData = await response.json();
+            // console.log(responseData)
+            this.setState({
+                recipe:responseData,
+                loading: false
+            })
+        }
+        catch(error){
+            console.log(error)
+        }
+    }
+   
     
 
 
     render() {
+        // console.log('Render Called');
         const {sourceUrl,sourceName,title,servings,summary,image,preparationMinutes,cookingMinutes,readyInMinutes,extendedIngredients,dishTypes,analyzedInstructions,vegetarian,vegan,diets} =this.state.recipe;
 
+        // if (this.state.recipe.dishTypes === undefined) return <p>LOADING</p>
+        
         // {const {summaryCrop} = summary(/^(.{1}[^\s]*).*/, "$1")}
         
 
         
         if(this.state.loading){
             return(
-                <div class="text-center mt-5">
-                    <div class="spinner-border mt-5" style={{width: '10rem',height:'10rem'}} role="status">
-                        <span class="sr-only">Loading...</span>
+                <div className="text-center mt-5">
+                    <div className="spinner-border mt-5" style={{width: '10rem',height:'10rem'}} role="status">
+                        <span className="sr-only">Loading...</span>
                     </div>
                     <div>
                         <h1 className='display-4 mt-5'>Please wait...</h1>
@@ -156,7 +187,7 @@ export default class SingleRecipe extends Component {
                 <div className="card border border-info">
                 <div className="card-body">
                     <h5 className="card-title d-inline font-weight-bold">Servings :  </h5>
-                    <h5 className='d-inline'> {servings} People</h5>
+                    <h5 className='d-inline'> {servings} </h5>
                 </div>
             </div>
 

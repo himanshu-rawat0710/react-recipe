@@ -13,20 +13,20 @@ export default class Footer extends Component {
                 
 
                 {/* <!-- Site footer --> */}
-                <footer class="site-footer">
-                <div class="container">
-                    <div class="row">
-                    <div class="col-sm-12 col-md-6">
+                <footer className="site-footer">
+                <div className="container">
+                    <div className="row">
+                    <div className="col-sm-12 col-md-6">
                         <h6>About</h6>
-                        <p class="text-justify">
+                        <p className="text-justify">
                             Hope this site helped you what you looking for. This site has all the basic elements that you need to start making your dish like summary, dish-types, meal-type, preparation-time, calories, serving, detail info of ingredients need and also full instructions how to make your favourite food or dish.
                             Also it provide the feature of searching what you looking for by ingredients name etc.
                         </p>
                     </div>
 
-                    <div class="col-xs-6 col-md-3">
+                    <div className="col-xs-6 col-md-3">
                         <h6>Some More of my work</h6>
-                        <ul class="footer-links">
+                        <ul className="footer-links">
                         <li><a href="https://himanshu-rawat0710.github.io/Uttarakhand-Odyssey/">Uttarakhand Odyssey</a></li>
                         <li><a href="https://the-todo-list.netlify.app/">To-do List</a></li>
                         <li><a href="https://the-city-tour.netlify.app/">City-tour</a></li>
@@ -35,9 +35,9 @@ export default class Footer extends Component {
                         </ul>
                     </div>
 
-                    <div class="col-xs-6 col-md-3">
+                    <div className="col-xs-6 col-md-3">
                         <h6>Quick Links</h6>
-                        <ul class="footer-links">
+                        <ul className="footer-links">
                         <li><a href="https://www.linkedin.com/in/himanshu-rawat-0710/">About Me</a></li>
                         <li><a href="mailto:ryannair435@gmail.com">Contact</a></li>
                         <li><a href="https://github.com/himanshu-rawat0710">Contribute</a></li>
@@ -48,20 +48,20 @@ export default class Footer extends Component {
                     </div>
                     <hr/>
                 </div>
-                <div class="container">
-                    <div class="row">
-                    <div class="col-md-8 col-sm-6 col-xs-12">
-                        <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+                <div className="container">
+                    <div className="row">
+                    <div className="col-md-8 col-sm-6 col-xs-12">
+                        <p className="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
                     <a href="https://www.linkedin.com/in/himanshu-rawat-0710/"> Himanshu Rawat</a>.
                         </p>
                     </div>
 
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <ul class="social-icons">
-                        <li><a class="linkedin" href="https://www.linkedin.com/in/himanshu-rawat-0710/"><FontAwesomeIcon icon={faLinkedinIn} /> </a></li>
-                        <li><a class="github" href="https://github.com/himanshu-rawat0710"><FontAwesomeIcon icon={faGithub} /> </a></li>
-                        <li><a class="gmail" href="mailto:ryannair435@gmail.com"><FontAwesomeIcon icon={faEnvelope} /> </a></li>
-                        <li><a class="linkedin" href="https://www.facebook.com/himanshu.rawat.7777"><FontAwesomeIcon icon={faFacebookF} /> </a></li>   
+                    <div className="col-md-4 col-sm-6 col-xs-12">
+                        <ul className="social-icons">
+                        <li><a className="linkedin" href="https://www.linkedin.com/in/himanshu-rawat-0710/"><FontAwesomeIcon icon={faLinkedinIn} /> </a></li>
+                        <li><a className="github" href="https://github.com/himanshu-rawat0710"><FontAwesomeIcon icon={faGithub} /> </a></li>
+                        <li><a className="gmail" href="mailto:ryannair435@gmail.com"><FontAwesomeIcon icon={faEnvelope} /> </a></li>
+                        <li><a className="linkedin" href="https://www.facebook.com/himanshu.rawat.7777"><FontAwesomeIcon icon={faFacebookF} /> </a></li>   
                         </ul>
                     </div>
                     </div>
