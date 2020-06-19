@@ -1,6 +1,6 @@
 
 import React from 'react';
-import logo from '../images/logo.svg';
+import logo from '../images/brandicon.png';
 import {Link} from 'react-router-dom';
 // import Header from './Header'
 
@@ -8,7 +8,7 @@ export default function Navbar() {
     return (
         <nav className="navbar navbar-expand-md bg-light navbar-light" role='navigation'>
         {/* nav-brand  */}
-        <Link to='/' className='navbar-brand'>
+        <Link to='/' className='navbar-brand '>
                 <img src={logo} alt='logo' />
         </Link>
       

@@ -10,7 +10,7 @@ export default class Default extends Component {
             <h2 className='text-light text-uppercase'>
                 You are in wrong place
             </h2>
-            <Link to='/' className='text-uppercase btn btn-secondary btn-lg mt-3'>
+            <Link to='/' className='text-uppercase btn btn-warning btn-lg mt-3'>
                 Return Home
             </Link>
             </Header>
